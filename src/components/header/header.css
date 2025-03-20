@@ -1,0 +1,26 @@
+.header {
+    grid-area: header;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+
+.menu-icon {
+    display: none;
+}
+
+.icon {
+    /* The vertical-align property controls the vertical positioning of inline or inline-block elements relative to their parent or surrounding text. */
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon,
+.icon_header {
+    margin-right: 5px;
+}

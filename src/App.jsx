@@ -6,7 +6,7 @@ import ErrorPage from './pages/errorPage/ErrorPage';
 function App() {
 
   return (
-    <main className='grid-container'>
+    <main>
       {/* <Navbar /> */}
       <Routes>
         <Route path='/react_responsive_admin_dashboard' element={<Dashboard />} />

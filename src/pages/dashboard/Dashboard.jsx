@@ -1,9 +1,14 @@
 import './dashboard.css';
+import Header from '../../components/header/Header';
+import SideBar from '../../components/sideBar/SideBar';
+import Home from '../home/Home';
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1>Dasboard</h1>
+    <div className='grid-container'>
+      <Header />
+      <SideBar />
+      <Home />
     </div>
   )
 }
