@@ -16,6 +16,14 @@
     margin-right: 5px;
 }
 
+@media screen and (max-width: 992px) {
+
+    .menu-icon {
+        display: inline;
+    }
+
+}
+
 /* Extra Small <= 576px */
 
 @media screen and (max-width: 576px) {

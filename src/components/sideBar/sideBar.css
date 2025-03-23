@@ -31,7 +31,7 @@
 .close_icon {
     color: red;
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 15px;
     cursor: pointer;
 }
 
@@ -59,7 +59,19 @@
 .sidebar-responsive {
     display: inline !important;
     position: absolute;
+    left: 0px;
     z-index: 12 !important;
+    animation: slideIn 0.3s linear;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -200px;
+    }
+
+    100% {
+        left: 0px;
+    }
 }
 
 .icon_header {
@@ -72,16 +84,12 @@
 
 /* ================= Responsiveness ================= */
 @media screen and (max-width: 992px) {
-  
+
     #sidebar {
-      display: none;
+        display: none;
     }
-  
-    .menu-icon {
-      display: inline;
-    }
-  
+
     .sidebar-title>span {
-      display: inline;
+        display: inline;
     }
-  }
+}

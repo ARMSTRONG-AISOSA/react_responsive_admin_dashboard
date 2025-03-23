@@ -1,11 +1,11 @@
 import './header.css';
 import { BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsSearch, BsJustify } from 'react-icons/bs';
 
-const Header = () => {
+const Header = ({ OpenSideBar }) => {
   return (
     <header className='header'>
       <div className='menu-icon'>
-        <BsJustify className='icon' />
+        <BsJustify className='icon' onClick={OpenSideBar} />
       </div>
       <div className='header-left'>
         <BsSearch className='icon' />

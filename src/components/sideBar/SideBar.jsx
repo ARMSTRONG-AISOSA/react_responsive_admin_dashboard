@@ -5,14 +5,17 @@ import {
 } from 'react-icons/bs'
 import { FaXmark } from "react-icons/fa6";
 
-const SideBar = () => {
+const SideBar = ({ openSideBarToggle, OpenSideBar }) => {
   return (
-    <aside id='sidebar'>
+    <aside
+      id='sidebar'
+      className={openSideBarToggle ? "sidebar-responsive" : ""}
+    >
       <div className='sidebar-title'>
         <div className='sidebar-brand'>
           <BsCart3 className='icon_header' /> <p>SHOP</p>
         </div>
-        <span><FaXmark className='icon close_icon' /></span>
+        <span><FaXmark className='icon close_icon' onClick={OpenSideBar} /></span>
       </div>
 
       <ul className='sidebar-list'>
