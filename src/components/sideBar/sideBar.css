@@ -68,3 +68,20 @@
     font-size: 26px;
     cursor: pointer;
 }
+
+
+/* ================= Responsiveness ================= */
+@media screen and (max-width: 992px) {
+  
+    #sidebar {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: inline;
+    }
+  
+    .sidebar-title>span {
+      display: inline;
+    }
+  }

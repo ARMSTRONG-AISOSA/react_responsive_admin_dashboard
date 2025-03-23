@@ -1,7 +1,12 @@
-import { BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill } from 'react-icons/bs';
+import { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill } from 'react-icons/bs';
 import './mainSection.css';
+import BarChartComponent from '../charts/barChart/BarChartComponent';
+import LineChartComponent from '../charts/lineChart/lineChartComponent';
+import { barChartData, lineChartData } from '../data/data';
 
 const MainSection = () => {
+
+
   return (
     <div className='main-container'>
       <div className='main-title'>
@@ -20,7 +25,7 @@ const MainSection = () => {
         <div className='card'>
           <div className='card-inner'>
             <h3>CATEGORIES</h3>
-            <BsGrid1X2Fill className='card_icon' />
+            <BsFillGrid3X3GapFill className='card_icon' />
           </div>
           <h2>300</h2>
         </div>
@@ -42,8 +47,12 @@ const MainSection = () => {
         </div>
       </div>
 
-      <div className='charts'></div>
-
+      <div className='charts'>
+        
+      <BarChartComponent data={barChartData} />
+        
+      <LineChartComponent data={lineChartData} />
+      </div>
     </div>
   )
 }
